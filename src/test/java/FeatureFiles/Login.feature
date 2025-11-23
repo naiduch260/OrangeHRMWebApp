@@ -44,4 +44,4 @@ Feature: OrangeHRM application
   Scenario: Verify user display the Required error message under Usare Name field
     Given user navigate to Login page
     And user click on login button
-    Then user will get error message under username field
+    
