@@ -34,14 +34,14 @@ Feature: OrangeHRM application
   Scenario Outline: verify userdisplay the Required error message only under password fieldd
     Given user navigate to Login page
     When user enter username "<userName>" field
-     And user click on login button
+    And user click on login button
     Then user will get error message under password field
 
     Examples:
-      | userName | password  |
-      | Admin    |           |
-      
-      
-      
-      
-      
+      | userName | password |
+      | Admin    |          |
+
+  Scenario: Verify user display the Required error message under Usare Name field
+    Given user navigate to Login page
+    And user click on login button
+    Then user will get error message under username field
